@@ -6,14 +6,15 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Введіть 2 числа не більше 1000, що відповідають двом катетам трикутника");
+		System.out.println("Введіть ціле число, не більше 10000");
 		Scanner sc = new Scanner(System.in);
-		int katet1 = sc.nextInt();
-		int katet2 = sc.nextInt();
+		int number = sc.nextInt();
 		
-		double suma = katet1*katet1 + katet2*katet2;
-		suma = Math.sqrt(suma);
-		System.out.println("Гіпотенуза трикудника дорівнює = " + suma);
+		int nextNumber = number+1;
+		int previousNumber = number-1;
+		
+		System.out.println("The next number for the numbe " +number+ " is " +nextNumber);
+		System.out.println("The previous number for the number " +number+ " is " +previousNumber);
 		
 	}
 
